@@ -1,0 +1,11 @@
+{
+  "name": "deepsieve",
+  "version": "0.1.0",
+  "description": "Connect your agent to DeepSieve: cited deep research through its remote MCP server, plus the DeepSieve skill.",
+  "contextFileName": "skills/deepsieve/SKILL.md",
+  "mcpServers": {
+    "deepsieve": {
+      "httpUrl": "https://deepsieve.ai/mcp"
+    }
+  }
+}

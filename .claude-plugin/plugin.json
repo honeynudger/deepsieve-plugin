@@ -1,0 +1,23 @@
+{
+  "name": "deepsieve",
+  "version": "0.1.0",
+  "description": "Connect your agent to DeepSieve: cited deep research through its remote MCP server, plus the DeepSieve skill.",
+  "author": {
+    "name": "Honey Nudger Inc.",
+    "url": "https://deepsieve.ai"
+  },
+  "homepage": "https://deepsieve.ai",
+  "repository": "https://github.com/honeynudger/deepsieve-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "deep-research",
+    "research",
+    "mcp",
+    "datasets",
+    "citations",
+    "agents"
+  ],
+  "displayName": "DeepSieve",
+  "privacyPolicyUrl": "https://deepsieve.ai/privacy",
+  "icon": ".claude-plugin/icon.png"
+}

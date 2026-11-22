@@ -1,0 +1,14 @@
+{
+  "name": "deepsieve-plugin",
+  "description": "The DeepSieve plugin for Claude Code: DeepSieve’s remote MCP server plus the DeepSieve skill.",
+  "owner": {
+    "name": "Honey Nudger Inc."
+  },
+  "plugins": [
+    {
+      "name": "deepsieve",
+      "source": "./",
+      "description": "Connect your agent to DeepSieve: cited deep research through its remote MCP server, plus the DeepSieve skill."
+    }
+  ]
+}
