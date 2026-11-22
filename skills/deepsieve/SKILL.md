@@ -191,7 +191,9 @@ they have not seen.
   `plan_upgrade_required` means the PLAN lacks the capability —
   topping up will not help, so do not retry; a human must upgrade. If
   `GET /v1/me`'s `subscription.trial.eligible` is true, tell them a free trial is open to
-  them (`offer_days` long) and hand them `{app_url}/pricing`: checkout takes a card.
+  them (`offer_days` long) and hand them `{app_url}/pricing`: a plan's checkout takes a card.
+  That is separate from the first research run: a new organization's first standard run
+  needs no plan and no card (`free_run_available` on `GET /v1/me`).
   A `subscription.status` of `none` is not always a new org: with `expired_from_plan` set
   its term ended (read and export only, no new runs), and with `retention_until` set it is
   closed and is deleted on that date (once it has passed, the research is gone). Tell your
