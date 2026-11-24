@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "deepsieve": {
+      "serverUrl": "https://deepsieve.ai/mcp"
+    }
+  }
+}
