@@ -30,6 +30,40 @@ The first time you connect, you sign in to DeepSieve in your browser. You do not
 
 The plugin, MCP connection, and dry_run test mode are free; live research runs use your DeepSieve account (new organizations include one free standard run, no card required).
 
+**Other MCP clients (JSON config):**
+
+```json
+{
+  "mcpServers": {
+    "deepsieve": { "type": "http", "url": "https://deepsieve.ai/mcp" }
+  }
+}
+```
+
+## What the MCP server does
+
+The server gives your agent typed tools over DeepSieve's API. With them, an agent can:
+
+- **Design a dataset:** propose a Blueprint (the tables, columns and research instructions) from a plain-language brief, then adjust it before anything is built.
+- **Run research:** estimate a run's cost, start it (or a free `dry_run` first), and check its status.
+- **Read cited data:** query the resulting rows. Each cell carries a confidence verdict, and cited cells link to their sources.
+- **Check history:** see what changed in a dataset, or in a single cell, over time.
+- **Keep it fresh:** turn monitoring on, so values are re-checked on a schedule.
+- **Ask and export:** ask the research agent about a report, and export a dataset.
+
+A browser-login session can't apply a change to your active Blueprint, manage API keys, or start or change a charge. Those stay with a person in the app.
+
+## Using it
+
+Once connected, ask your agent in plain language, for example:
+
+- "Use DeepSieve to build a dataset of AI meeting assistants with pricing, integrations and security certifications. Show me the plan before running it."
+- "Do a free dry run first, then tell me what a real run would cost."
+- "Which values in my market map are contradicted by their sources?"
+- "What changed in my competitor dataset since last week?"
+
+Full tool reference and recipes: [deepsieve.ai/developers/mcp](https://deepsieve.ai/developers/mcp) and the skill in `skills/deepsieve/`.
+
 ## Links
 
 - Product: https://deepsieve.ai
